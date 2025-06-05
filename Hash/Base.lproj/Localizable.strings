@@ -1,8 +1,8 @@
 /* Hash Calculator App Localization */
 
 /* Main Interface */
-"select_files_prompt" = "选择文件开始计算哈希值";
-"drag_files_prompt" = "拖拽文件到此处或点击浏览按钮";
+"select_files_prompt" = "Select files to start calculating hashes";
+"drag_files_prompt" = "Drag files here or click browse button";
 "unknown_size" = "Unknown size";
 
 /* Buttons */
