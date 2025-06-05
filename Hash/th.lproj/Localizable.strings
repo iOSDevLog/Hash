@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Thai localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "เลือกไฟล์เพื่อเริ่มคำนวณค่า hash";
+"drag_files_prompt" = "ลากไฟล์มาที่นี่หรือคลิกปุ่มเรียกดู";
+"unknown_size" = "ขนาดไม่ทราบ";
+
+/* Buttons */
+"browse_button" = "เรียกดู...";
+"clear_button" = "ล้าง";
+"copy_button" = "คัดลอก";
+"save_button" = "บันทึก...";
+"calculate_button" = "คำนวณ";
+"stop_button" = "หยุด";
+
+/* Hash Types */
+"version_label" = "เวอร์ชัน";
+"date_label" = "วันที่";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "ไฟล์";
+"total_progress" = "รวม";
+
+/* File Info */
+"file_label" = "ไฟล์";
+"size_label" = "ขนาด";
+"modified_label" = "แก้ไข";
+"bytes_suffix" = "ไบต์";
+
+/* Save Dialog */
+"default_filename" = "ผลลัพธ์ Hash.txt";

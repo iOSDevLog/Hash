@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Romanian localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Selectați fișiere pentru a începe calcularea valorilor hash";
+"drag_files_prompt" = "Trageți fișierele aici sau faceți clic pe butonul de navigare";
+"unknown_size" = "Dimensiune necunoscută";
+
+/* Buttons */
+"browse_button" = "Navigare...";
+"clear_button" = "Șterge";
+"copy_button" = "Copiază";
+"save_button" = "Salvează...";
+"calculate_button" = "Calculează";
+"stop_button" = "Oprește";
+
+/* Hash Types */
+"version_label" = "Versiune";
+"date_label" = "Data";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Fișier";
+"total_progress" = "Total";
+
+/* File Info */
+"file_label" = "Fișier";
+"size_label" = "Dimensiune";
+"modified_label" = "Modificat";
+"bytes_suffix" = "octeți";
+
+/* Save Dialog */
+"default_filename" = "Rezultate Hash.txt";

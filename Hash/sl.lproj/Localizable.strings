@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Slovenian localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Izberite datoteke za začetek računanja hash vrednosti";
+"drag_files_prompt" = "Povlecite datoteke sem ali kliknite gumb za brskanje";
+"unknown_size" = "Neznana velikost";
+
+/* Buttons */
+"browse_button" = "Brskaj...";
+"clear_button" = "Počisti";
+"copy_button" = "Kopiraj";
+"save_button" = "Shrani...";
+"calculate_button" = "Izračunaj";
+"stop_button" = "Ustavi";
+
+/* Hash Types */
+"version_label" = "Različica";
+"date_label" = "Datum";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Datoteka";
+"total_progress" = "Skupaj";
+
+/* File Info */
+"file_label" = "Datoteka";
+"size_label" = "Velikost";
+"modified_label" = "Spremenjeno";
+"bytes_suffix" = "bajtov";
+
+/* Save Dialog */
+"default_filename" = "Hash Rezultati.txt";

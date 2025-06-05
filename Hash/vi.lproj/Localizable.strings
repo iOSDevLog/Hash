@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Vietnamese localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Chọn tệp để bắt đầu tính toán giá trị hash";
+"drag_files_prompt" = "Kéo tệp vào đây hoặc nhấp vào nút duyệt";
+"unknown_size" = "Kích thước không xác định";
+
+/* Buttons */
+"browse_button" = "Duyệt...";
+"clear_button" = "Xóa";
+"copy_button" = "Sao chép";
+"save_button" = "Lưu...";
+"calculate_button" = "Tính toán";
+"stop_button" = "Dừng";
+
+/* Hash Types */
+"version_label" = "Phiên bản";
+"date_label" = "Ngày";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Tệp";
+"total_progress" = "Tổng";
+
+/* File Info */
+"file_label" = "Tệp";
+"size_label" = "Kích thước";
+"modified_label" = "Đã sửa đổi";
+"bytes_suffix" = "byte";
+
+/* Save Dialog */
+"default_filename" = "Kết quả Hash.txt";

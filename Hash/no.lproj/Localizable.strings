@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Norwegian localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Velg filer for å begynne å beregne hash-verdier";
+"drag_files_prompt" = "Dra filer hit eller klikk på bla gjennom-knappen";
+"unknown_size" = "Ukjent størrelse";
+
+/* Buttons */
+"browse_button" = "Bla gjennom...";
+"clear_button" = "Tøm";
+"copy_button" = "Kopier";
+"save_button" = "Lagre...";
+"calculate_button" = "Beregn";
+"stop_button" = "Stopp";
+
+/* Hash Types */
+"version_label" = "Versjon";
+"date_label" = "Dato";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Fil";
+"total_progress" = "Totalt";
+
+/* File Info */
+"file_label" = "Fil";
+"size_label" = "Størrelse";
+"modified_label" = "Endret";
+"bytes_suffix" = "bytes";
+
+/* Save Dialog */
+"default_filename" = "Hash Resultater.txt";

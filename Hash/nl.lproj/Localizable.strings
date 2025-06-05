@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Dutch localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Selecteer bestanden om hash-waarden te berekenen";
+"drag_files_prompt" = "Sleep bestanden hierheen of klik op de bladerknop";
+"unknown_size" = "Onbekende grootte";
+
+/* Buttons */
+"browse_button" = "Bladeren...";
+"clear_button" = "Wissen";
+"copy_button" = "Kopiëren";
+"save_button" = "Opslaan...";
+"calculate_button" = "Berekenen";
+"stop_button" = "Stoppen";
+
+/* Hash Types */
+"version_label" = "Versie";
+"date_label" = "Datum";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Bestand";
+"total_progress" = "Totaal";
+
+/* File Info */
+"file_label" = "Bestand";
+"size_label" = "Grootte";
+"modified_label" = "Gewijzigd";
+"bytes_suffix" = "bytes";
+
+/* Save Dialog */
+"default_filename" = "Hash Resultaten.txt";

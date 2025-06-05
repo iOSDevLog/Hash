@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Greek localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Επιλέξτε αρχεία για να ξεκινήσετε τον υπολογισμό των τιμών hash";
+"drag_files_prompt" = "Σύρετε αρχεία εδώ ή κάντε κλικ στο κουμπί περιήγησης";
+"unknown_size" = "Άγνωστο μέγεθος";
+
+/* Buttons */
+"browse_button" = "Περιήγηση...";
+"clear_button" = "Εκκαθάριση";
+"copy_button" = "Αντιγραφή";
+"save_button" = "Αποθήκευση...";
+"calculate_button" = "Υπολογισμός";
+"stop_button" = "Διακοπή";
+
+/* Hash Types */
+"version_label" = "Έκδοση";
+"date_label" = "Ημερομηνία";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Αρχείο";
+"total_progress" = "Σύνολο";
+
+/* File Info */
+"file_label" = "Αρχείο";
+"size_label" = "Μέγεθος";
+"modified_label" = "Τροποποιήθηκε";
+"bytes_suffix" = "bytes";
+
+/* Save Dialog */
+"default_filename" = "Αποτελέσματα Hash.txt";

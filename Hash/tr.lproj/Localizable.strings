@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Turkish localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Hash değerlerini hesaplamaya başlamak için dosyaları seçin";
+"drag_files_prompt" = "Dosyaları buraya sürükleyin veya gözat düğmesine tıklayın";
+"unknown_size" = "Bilinmeyen boyut";
+
+/* Buttons */
+"browse_button" = "Gözat...";
+"clear_button" = "Temizle";
+"copy_button" = "Kopyala";
+"save_button" = "Kaydet...";
+"calculate_button" = "Hesapla";
+"stop_button" = "Durdur";
+
+/* Hash Types */
+"version_label" = "Sürüm";
+"date_label" = "Tarih";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Dosya";
+"total_progress" = "Toplam";
+
+/* File Info */
+"file_label" = "Dosya";
+"size_label" = "Boyut";
+"modified_label" = "Değiştirildi";
+"bytes_suffix" = "bayt";
+
+/* Save Dialog */
+"default_filename" = "Hash Sonuçları.txt";

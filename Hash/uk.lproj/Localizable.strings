@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Ukrainian localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Виберіть файли для початку обчислення значень хеш";
+"drag_files_prompt" = "Перетягніть файли сюди або натисніть кнопку огляду";
+"unknown_size" = "Невідомий розмір";
+
+/* Buttons */
+"browse_button" = "Огляд...";
+"clear_button" = "Очистити";
+"copy_button" = "Копіювати";
+"save_button" = "Зберегти...";
+"calculate_button" = "Обчислити";
+"stop_button" = "Зупинити";
+
+/* Hash Types */
+"version_label" = "Версія";
+"date_label" = "Дата";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Файл";
+"total_progress" = "Загалом";
+
+/* File Info */
+"file_label" = "Файл";
+"size_label" = "Розмір";
+"modified_label" = "Змінено";
+"bytes_suffix" = "байт";
+
+/* Save Dialog */
+"default_filename" = "Результати Hash.txt";

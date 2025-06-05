@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Hebrew localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "בחר קבצים כדי להתחיל לחשב ערכי hash";
+"drag_files_prompt" = "גרור קבצים לכאן או לחץ על כפתור עיון";
+"unknown_size" = "גודל לא ידוע";
+
+/* Buttons */
+"browse_button" = "עיון...";
+"clear_button" = "נקה";
+"copy_button" = "העתק";
+"save_button" = "שמור...";
+"calculate_button" = "חשב";
+"stop_button" = "עצור";
+
+/* Hash Types */
+"version_label" = "גרסה";
+"date_label" = "תאריך";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "קובץ";
+"total_progress" = "סה\"כ";
+
+/* File Info */
+"file_label" = "קובץ";
+"size_label" = "גודל";
+"modified_label" = "שונה";
+"bytes_suffix" = "בתים";
+
+/* Save Dialog */
+"default_filename" = "תוצאות Hash.txt";

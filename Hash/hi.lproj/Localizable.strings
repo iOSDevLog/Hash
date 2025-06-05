@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Hindi localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "हैश मान गणना शुरू करने के लिए फाइलें चुनें";
+"drag_files_prompt" = "फाइलों को यहाँ खींचें या ब्राउज़ बटन पर क्लिक करें";
+"unknown_size" = "अज्ञात आकार";
+
+/* Buttons */
+"browse_button" = "ब्राउज़...";
+"clear_button" = "साफ़ करें";
+"copy_button" = "कॉपी करें";
+"save_button" = "सेव करें...";
+"calculate_button" = "गणना करें";
+"stop_button" = "रोकें";
+
+/* Hash Types */
+"version_label" = "संस्करण";
+"date_label" = "दिनांक";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "फाइल";
+"total_progress" = "कुल";
+
+/* File Info */
+"file_label" = "फाइल";
+"size_label" = "आकार";
+"modified_label" = "संशोधित";
+"bytes_suffix" = "बाइट्स";
+
+/* Save Dialog */
+"default_filename" = "हैश परिणाम.txt";

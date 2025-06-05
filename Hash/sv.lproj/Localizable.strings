@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Swedish localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Välj filer för att börja beräkna hash-värden";
+"drag_files_prompt" = "Dra filer hit eller klicka på bläddra-knappen";
+"unknown_size" = "Okänd storlek";
+
+/* Buttons */
+"browse_button" = "Bläddra...";
+"clear_button" = "Rensa";
+"copy_button" = "Kopiera";
+"save_button" = "Spara...";
+"calculate_button" = "Beräkna";
+"stop_button" = "Stoppa";
+
+/* Hash Types */
+"version_label" = "Version";
+"date_label" = "Datum";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Fil";
+"total_progress" = "Totalt";
+
+/* File Info */
+"file_label" = "Fil";
+"size_label" = "Storlek";
+"modified_label" = "Ändrad";
+"bytes_suffix" = "bytes";
+
+/* Save Dialog */
+"default_filename" = "Hash Resultat.txt";

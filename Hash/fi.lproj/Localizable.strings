@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Finnish localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Valitse tiedostot aloittaaksesi hash-arvojen laskemisen";
+"drag_files_prompt" = "Vedä tiedostot tähän tai napsauta selaa-painiketta";
+"unknown_size" = "Tuntematon koko";
+
+/* Buttons */
+"browse_button" = "Selaa...";
+"clear_button" = "Tyhjennä";
+"copy_button" = "Kopioi";
+"save_button" = "Tallenna...";
+"calculate_button" = "Laske";
+"stop_button" = "Pysäytä";
+
+/* Hash Types */
+"version_label" = "Versio";
+"date_label" = "Päivämäärä";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Tiedosto";
+"total_progress" = "Yhteensä";
+
+/* File Info */
+"file_label" = "Tiedosto";
+"size_label" = "Koko";
+"modified_label" = "Muokattu";
+"bytes_suffix" = "tavua";
+
+/* Save Dialog */
+"default_filename" = "Hash Tulokset.txt";

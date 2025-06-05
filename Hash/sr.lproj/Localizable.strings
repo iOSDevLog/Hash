@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Serbian localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Изаберите фајлове за почетак израчунавања hash вредности";
+"drag_files_prompt" = "Превуците фајлове овде или кликните на дугме за прегледање";
+"unknown_size" = "Непозната величина";
+
+/* Buttons */
+"browse_button" = "Прегледај...";
+"clear_button" = "Обриши";
+"copy_button" = "Копирај";
+"save_button" = "Сачувај...";
+"calculate_button" = "Израчунај";
+"stop_button" = "Заустави";
+
+/* Hash Types */
+"version_label" = "Верзија";
+"date_label" = "Датум";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Фајл";
+"total_progress" = "Укупно";
+
+/* File Info */
+"file_label" = "Фајл";
+"size_label" = "Величина";
+"modified_label" = "Измењено";
+"bytes_suffix" = "бајтова";
+
+/* Save Dialog */
+"default_filename" = "Hash Резултати.txt";

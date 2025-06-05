@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Polish localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Wybierz pliki, aby rozpocząć obliczanie wartości hash";
+"drag_files_prompt" = "Przeciągnij pliki tutaj lub kliknij przycisk przeglądaj";
+"unknown_size" = "Nieznany rozmiar";
+
+/* Buttons */
+"browse_button" = "Przeglądaj...";
+"clear_button" = "Wyczyść";
+"copy_button" = "Kopiuj";
+"save_button" = "Zapisz...";
+"calculate_button" = "Oblicz";
+"stop_button" = "Zatrzymaj";
+
+/* Hash Types */
+"version_label" = "Wersja";
+"date_label" = "Data";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Plik";
+"total_progress" = "Łącznie";
+
+/* File Info */
+"file_label" = "Plik";
+"size_label" = "Rozmiar";
+"modified_label" = "Zmodyfikowany";
+"bytes_suffix" = "bajtów";
+
+/* Save Dialog */
+"default_filename" = "Wyniki Hash.txt";

@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   Hash
+
+   Created by i on 2025/6/5.
+   Czech localization
+*/
+
+/* Main Interface */
+"select_files_prompt" = "Vyberte soubory pro zahájení výpočtu hash hodnot";
+"drag_files_prompt" = "Přetáhněte soubory sem nebo klikněte na tlačítko procházet";
+"unknown_size" = "Neznámá velikost";
+
+/* Buttons */
+"browse_button" = "Procházet...";
+"clear_button" = "Vymazat";
+"copy_button" = "Kopírovat";
+"save_button" = "Uložit...";
+"calculate_button" = "Vypočítat";
+"stop_button" = "Zastavit";
+
+/* Hash Types */
+"version_label" = "Verze";
+"date_label" = "Datum";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Soubor";
+"total_progress" = "Celkem";
+
+/* File Info */
+"file_label" = "Soubor";
+"size_label" = "Velikost";
+"modified_label" = "Změněno";
+"bytes_suffix" = "bajtů";
+
+/* Save Dialog */
+"default_filename" = "Hash Výsledky.txt";
