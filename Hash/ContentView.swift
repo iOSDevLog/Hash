@@ -35,40 +35,40 @@ struct ContentView: View {
                             ForEach(Array(selectedFiles.enumerated()), id: \.element) { index, file in
                                 if let results = fileResults[file] {
                                     VStack(alignment: .leading, spacing: 4) {
-                                        Text("File: \(file.path)")
-                                            .font(.system(.caption, design: .monospaced))
-                                            .fontWeight(.medium)
-                                        
-                                        if let size = results["Size"] {
-                                            Text("Size: \(size)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
-                                        
-                                        // Display results in the same order as right panel
-                                        if enableVersion, let version = results["Version"] {
-                                            Text("Version: \(version)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
-                                        
-                                        if enableDate, let date = results["Date"] {
-                                            Text("Modified: \(date)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
-                                        
-                                        if enableMD5, let md5 = results["MD5"] {
-                                            Text("MD5: \(md5)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
-                                        
-                                        if enableSHA1, let sha1 = results["SHA1"] {
-                                            Text("SHA1: \(sha1)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
-                                        
-                                        if enableCRC32, let crc32 = results["CRC32"] {
-                                            Text("CRC32: \(crc32)")
-                                                .font(.system(.caption, design: .monospaced))
-                                        }
+                                        Text("\(NSLocalizedString("file_label", comment: "File label")): \(file.path)")
+                            .font(.system(.caption, design: .monospaced))
+                            .fontWeight(.medium)
+                        
+                        if let size = results["Size"] {
+                            Text("\(NSLocalizedString("size_label", comment: "Size label")): \(size)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
+                        
+                        // Display results in the same order as right panel
+                        if enableVersion, let version = results["Version"] {
+                            Text("\(NSLocalizedString("version_label", comment: "Version label")): \(version)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
+                        
+                        if enableDate, let date = results["Date"] {
+                            Text("\(NSLocalizedString("modified_label", comment: "Modified label")): \(date)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
+                        
+                        if enableMD5, let md5 = results["MD5"] {
+                            Text("\(NSLocalizedString("md5_label", comment: "MD5 label")): \(md5)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
+                        
+                        if enableSHA1, let sha1 = results["SHA1"] {
+                            Text("\(NSLocalizedString("sha1_label", comment: "SHA1 label")): \(sha1)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
+                        
+                        if enableCRC32, let crc32 = results["CRC32"] {
+                            Text("\(NSLocalizedString("crc32_label", comment: "CRC32 label")): \(crc32)")
+                                .font(.system(.caption, design: .monospaced))
+                        }
                                     }
                                     .padding(.vertical, 8)
                                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -83,7 +83,7 @@ struct ContentView: View {
                                 }
                             }
                         } else {
-                            Text("选择文件开始计算哈希值")
+                            Text(NSLocalizedString("select_files_prompt", comment: "Prompt to select files"))
                                 .foregroundColor(.secondary)
                                 .font(.caption)
                                 .padding()
@@ -113,7 +113,7 @@ struct ContentView: View {
                     ScrollView {
                         LazyVStack(alignment: .leading, spacing: 4) {
                             if selectedFiles.isEmpty {
-                                Text("拖拽文件到此处或点击浏览按钮")
+                                Text(NSLocalizedString("drag_files_prompt", comment: "Drag files prompt"))
                                     .foregroundColor(.secondary)
                                     .font(.caption)
                                     .frame(maxWidth: .infinity, minHeight: 100)
@@ -153,29 +153,29 @@ struct ContentView: View {
                     
                     // Control buttons
                     HStack(spacing: 8) {
-                        Button("Browse...") {
+                        Button(NSLocalizedString("browse_button", comment: "Browse button")) {
                             browseFiles()
                         }
                         .buttonStyle(.bordered)
                         
-                        Button("Clear") {
+                        Button(NSLocalizedString("clear_button", comment: "Clear button")) {
                             clearFiles()
                         }
                         .buttonStyle(.bordered)
                         
-                        Button("Copy") {
+                        Button(NSLocalizedString("copy_button", comment: "Copy button")) {
                             copyResults()
                         }
                         .buttonStyle(.bordered)
                         .disabled(fileResults.isEmpty)
                         
-                        Button("Save...") {
+                        Button(NSLocalizedString("save_button", comment: "Save button")) {
                             saveResults()
                         }
                         .buttonStyle(.bordered)
                         .disabled(fileResults.isEmpty)
                         
-                        Button(isCalculating ? "Stop" : "Calculate") {
+                        Button(isCalculating ? NSLocalizedString("stop_button", comment: "Stop button") : NSLocalizedString("calculate_button", comment: "Calculate button")) {
                             if isCalculating {
                                 stopCalculation()
                             } else {
@@ -190,11 +190,11 @@ struct ContentView: View {
                 
                 // Right side - Hash algorithm options
                 VStack(alignment: .leading, spacing: 8) {
-                    Toggle("Version", isOn: $enableVersion)
-                    Toggle("Date", isOn: $enableDate)
-                    Toggle("MD5", isOn: $enableMD5)
-                    Toggle("SHA1", isOn: $enableSHA1)
-                    Toggle("CRC32", isOn: $enableCRC32)
+                    Toggle(NSLocalizedString("version_label", comment: "Version toggle"), isOn: $enableVersion)
+                    Toggle(NSLocalizedString("date_label", comment: "Date toggle"), isOn: $enableDate)
+                    Toggle(NSLocalizedString("md5_label", comment: "MD5 toggle"), isOn: $enableMD5)
+                    Toggle(NSLocalizedString("sha1_label", comment: "SHA1 toggle"), isOn: $enableSHA1)
+                    Toggle(NSLocalizedString("crc32_label", comment: "CRC32 toggle"), isOn: $enableCRC32)
                 }
                 .frame(width: 100)
                 .padding(.leading, 16)
@@ -204,7 +204,7 @@ struct ContentView: View {
             // Bottom section - Progress bars
             VStack(spacing: 4) {
                 HStack {
-                    Text("File")
+                    Text(NSLocalizedString("file_progress", comment: "File progress label"))
                         .font(.caption)
                         .frame(width: 40, alignment: .leading)
                     ProgressView(value: progress)
@@ -212,7 +212,7 @@ struct ContentView: View {
                 }
                 
                 HStack {
-                    Text("Total")
+                    Text(NSLocalizedString("total_progress", comment: "Total progress label"))
                         .font(.caption)
                         .frame(width: 40, alignment: .leading)
                     ProgressView(value: totalProgress)
@@ -256,24 +256,24 @@ struct ContentView: View {
         var allResults: [String] = []
         for file in selectedFiles {
             if let results = fileResults[file] {
-                allResults.append("File: \(file.path)")
+                allResults.append("\(NSLocalizedString("file_label", comment: "File label")): \(file.path)")
                 if let size = results["Size"] {
-                    allResults.append("Size: \(size)")
+                    allResults.append("\(NSLocalizedString("size_label", comment: "Size label")): \(size)")
                 }
                 if enableVersion, let version = results["Version"] {
-                    allResults.append("Version: \(version)")
+                    allResults.append("\(NSLocalizedString("version_label", comment: "Version label")): \(version)")
                 }
                 if enableDate, let date = results["Date"] {
-                    allResults.append("Modified: \(date)")
+                    allResults.append("\(NSLocalizedString("modified_label", comment: "Modified label")): \(date)")
                 }
                 if enableMD5, let md5 = results["MD5"] {
-                    allResults.append("MD5: \(md5)")
+                    allResults.append("\(NSLocalizedString("md5_label", comment: "MD5 label")): \(md5)")
                 }
                 if enableSHA1, let sha1 = results["SHA1"] {
-                    allResults.append("SHA1: \(sha1)")
+                    allResults.append("\(NSLocalizedString("sha1_label", comment: "SHA1 label")): \(sha1)")
                 }
                 if enableCRC32, let crc32 = results["CRC32"] {
-                    allResults.append("CRC32: \(crc32)")
+                    allResults.append("\(NSLocalizedString("crc32_label", comment: "CRC32 label")): \(crc32)")
                 }
                 allResults.append("") // Empty line between files
             }
@@ -285,30 +285,30 @@ struct ContentView: View {
     private func saveResults() {
         let panel = NSSavePanel()
         panel.allowedContentTypes = [UTType.plainText]
-        panel.nameFieldStringValue = "hash_results.txt"
+        panel.nameFieldStringValue = NSLocalizedString("default_filename", comment: "Default save filename")
         
         if panel.runModal() == .OK, let url = panel.url {
             var allResults: [String] = []
             for file in selectedFiles {
                 if let results = fileResults[file] {
-                    allResults.append("File: \(file.path)")
+                    allResults.append("\(NSLocalizedString("file_label", comment: "File label")): \(file.path)")
                     if let size = results["Size"] {
-                        allResults.append("Size: \(size)")
+                        allResults.append("\(NSLocalizedString("size_label", comment: "Size label")): \(size)")
                     }
                     if enableVersion, let version = results["Version"] {
-                        allResults.append("Version: \(version)")
+                        allResults.append("\(NSLocalizedString("version_label", comment: "Version label")): \(version)")
                     }
                     if enableDate, let date = results["Date"] {
-                        allResults.append("Modified: \(date)")
+                        allResults.append("\(NSLocalizedString("modified_label", comment: "Modified label")): \(date)")
                     }
                     if enableMD5, let md5 = results["MD5"] {
-                        allResults.append("MD5: \(md5)")
+                        allResults.append("\(NSLocalizedString("md5_label", comment: "MD5 label")): \(md5)")
                     }
                     if enableSHA1, let sha1 = results["SHA1"] {
-                        allResults.append("SHA1: \(sha1)")
+                        allResults.append("\(NSLocalizedString("sha1_label", comment: "SHA1 label")): \(sha1)")
                     }
                     if enableCRC32, let crc32 = results["CRC32"] {
-                        allResults.append("CRC32: \(crc32)")
+                        allResults.append("\(NSLocalizedString("crc32_label", comment: "CRC32 label")): \(crc32)")
                     }
                     allResults.append("") // Empty line between files
                 }
@@ -353,7 +353,7 @@ struct ContentView: View {
             
             // File size
             if let size = fileAttributes?[.size] as? Int64 {
-                results["Size"] = "\(size) bytes"
+                results["Size"] = "\(size) \(NSLocalizedString("bytes_suffix", comment: "Bytes suffix"))"
             }
             
             if enableDate, let modificationDate = fileAttributes?[.modificationDate] as? Date {
@@ -453,7 +453,7 @@ struct ContentView: View {
     private func formatFileSize(_ url: URL) -> String {
         guard let attributes = try? FileManager.default.attributesOfItem(atPath: url.path),
               let size = attributes[.size] as? Int64 else {
-            return "Unknown size"
+            return NSLocalizedString("unknown_size", comment: "Unknown file size")
         }
         
         let formatter = ByteCountFormatter()

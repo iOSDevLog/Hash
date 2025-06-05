@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - French */
+
+/* Main Interface */
+"select_files_prompt" = "Sélectionnez des fichiers pour commencer le calcul des hachages";
+"drag_files_prompt" = "Glissez les fichiers ici ou cliquez sur parcourir";
+"unknown_size" = "Taille inconnue";
+
+/* Buttons */
+"browse_button" = "Parcourir...";
+"clear_button" = "Effacer";
+"copy_button" = "Copier";
+"save_button" = "Enregistrer...";
+"calculate_button" = "Calculer";
+"stop_button" = "Arrêter";
+
+/* Hash Types */
+"version_label" = "Version";
+"date_label" = "Date";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Fichier";
+"total_progress" = "Total";
+
+/* File Info */
+"file_label" = "Fichier";
+"size_label" = "Taille";
+"modified_label" = "Modifié";
+"bytes_suffix" = "octets";
+
+/* Save Dialog */
+"default_filename" = "resultats_hachage.txt";

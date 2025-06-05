@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - Japanese */
+
+/* Main Interface */
+"select_files_prompt" = "ファイルを選択してハッシュ値の計算を開始";
+"drag_files_prompt" = "ファイルをここにドラッグするか、参照ボタンをクリック";
+"unknown_size" = "不明なサイズ";
+
+/* Buttons */
+"browse_button" = "参照...";
+"clear_button" = "クリア";
+"copy_button" = "コピー";
+"save_button" = "保存...";
+"calculate_button" = "計算";
+"stop_button" = "停止";
+
+/* Hash Types */
+"version_label" = "バージョン";
+"date_label" = "日付";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "ファイル";
+"total_progress" = "合計";
+
+/* File Info */
+"file_label" = "ファイル";
+"size_label" = "サイズ";
+"modified_label" = "更新日時";
+"bytes_suffix" = "バイト";
+
+/* Save Dialog */
+"default_filename" = "ハッシュ結果.txt";

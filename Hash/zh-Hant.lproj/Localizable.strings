@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - Traditional Chinese */
+
+/* Main Interface */
+"select_files_prompt" = "選擇檔案開始計算雜湊值";
+"drag_files_prompt" = "拖拽檔案到此處或點擊瀏覽按鈕";
+"unknown_size" = "未知大小";
+
+/* Buttons */
+"browse_button" = "瀏覽...";
+"clear_button" = "清除";
+"copy_button" = "複製";
+"save_button" = "儲存...";
+"calculate_button" = "計算";
+"stop_button" = "停止";
+
+/* Hash Types */
+"version_label" = "版本";
+"date_label" = "日期";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "檔案";
+"total_progress" = "總計";
+
+/* File Info */
+"file_label" = "檔案";
+"size_label" = "大小";
+"modified_label" = "修改時間";
+"bytes_suffix" = "位元組";
+
+/* Save Dialog */
+"default_filename" = "雜湊結果.txt";

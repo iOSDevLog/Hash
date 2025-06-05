@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - Arabic */
+
+/* Main Interface */
+"select_files_prompt" = "اختر الملفات لبدء حساب قيم التجزئة";
+"drag_files_prompt" = "اسحب الملفات هنا أو انقر على زر التصفح";
+"unknown_size" = "حجم غير معروف";
+
+/* Buttons */
+"browse_button" = "تصفح...";
+"clear_button" = "مسح";
+"copy_button" = "نسخ";
+"save_button" = "حفظ...";
+"calculate_button" = "حساب";
+"stop_button" = "إيقاف";
+
+/* Hash Types */
+"version_label" = "الإصدار";
+"date_label" = "التاريخ";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "الملف";
+"total_progress" = "الإجمالي";
+
+/* File Info */
+"file_label" = "الملف";
+"size_label" = "الحجم";
+"modified_label" = "تم التعديل";
+"bytes_suffix" = "بايت";
+
+/* Save Dialog */
+"default_filename" = "نتائج_التجزئة.txt";

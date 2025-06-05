@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - Simplified Chinese */
+
+/* Main Interface */
+"select_files_prompt" = "选择文件开始计算哈希值";
+"drag_files_prompt" = "拖拽文件到此处或点击浏览按钮";
+"unknown_size" = "未知大小";
+
+/* Buttons */
+"browse_button" = "浏览...";
+"clear_button" = "清除";
+"copy_button" = "复制";
+"save_button" = "保存...";
+"calculate_button" = "计算";
+"stop_button" = "停止";
+
+/* Hash Types */
+"version_label" = "版本";
+"date_label" = "日期";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "文件";
+"total_progress" = "总计";
+
+/* File Info */
+"file_label" = "文件";
+"size_label" = "大小";
+"modified_label" = "修改时间";
+"bytes_suffix" = "字节";
+
+/* Save Dialog */
+"default_filename" = "哈希结果.txt";

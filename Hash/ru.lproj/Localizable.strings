@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - Russian */
+
+/* Main Interface */
+"select_files_prompt" = "Выберите файлы для начала вычисления хеш-значений";
+"drag_files_prompt" = "Перетащите файлы сюда или нажмите кнопку обзора";
+"unknown_size" = "Неизвестный размер";
+
+/* Buttons */
+"browse_button" = "Обзор...";
+"clear_button" = "Очистить";
+"copy_button" = "Копировать";
+"save_button" = "Сохранить...";
+"calculate_button" = "Вычислить";
+"stop_button" = "Остановить";
+
+/* Hash Types */
+"version_label" = "Версия";
+"date_label" = "Дата";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Файл";
+"total_progress" = "Всего";
+
+/* File Info */
+"file_label" = "Файл";
+"size_label" = "Размер";
+"modified_label" = "Изменен";
+"bytes_suffix" = "байт";
+
+/* Save Dialog */
+"default_filename" = "результаты_хеш.txt";

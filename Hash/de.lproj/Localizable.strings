@@ -1,0 +1,34 @@
+/* Hash Calculator App Localization - German */
+
+/* Main Interface */
+"select_files_prompt" = "Dateien auswählen, um Hash-Berechnung zu starten";
+"drag_files_prompt" = "Dateien hierher ziehen oder Durchsuchen-Button klicken";
+"unknown_size" = "Unbekannte Größe";
+
+/* Buttons */
+"browse_button" = "Durchsuchen...";
+"clear_button" = "Löschen";
+"copy_button" = "Kopieren";
+"save_button" = "Speichern...";
+"calculate_button" = "Berechnen";
+"stop_button" = "Stoppen";
+
+/* Hash Types */
+"version_label" = "Version";
+"date_label" = "Datum";
+"md5_label" = "MD5";
+"sha1_label" = "SHA1";
+"crc32_label" = "CRC32";
+
+/* Progress */
+"file_progress" = "Datei";
+"total_progress" = "Gesamt";
+
+/* File Info */
+"file_label" = "Datei";
+"size_label" = "Größe";
+"modified_label" = "Geändert";
+"bytes_suffix" = "Bytes";
+
+/* Save Dialog */
+"default_filename" = "hash_ergebnisse.txt";
