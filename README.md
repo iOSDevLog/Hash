@@ -1,147 +1,150 @@
 # Hash
+---
 
-一个简洁高效的 macOS 哈希值计算工具，支持多种哈希算法和文件批量处理。
+[简体中文](README_CN.md)
 
-## 功能特性
+A concise and efficient macOS hash calculation tool that supports multiple hash algorithms and batch file processing.
 
-- 🔐 **多种哈希算法支持**：MD5、SHA-1、CRC32
-- 📁 **批量文件处理**：支持同时计算多个文件的哈希值
-- 🎯 **拖拽操作**：直接拖拽文件到应用程序窗口即可开始计算
-- 📋 **一键复制**：点击即可复制哈希值到剪贴板
-- 📊 **文件信息显示**：显示文件大小、版本信息、修改日期等
-- 🌍 **多语言支持**：支持 22 种语言，包括中文、英文、日文、韩文、德文、法文、西班牙文、俄文、阿拉伯文等
-- 🎨 **现代化界面**：基于 SwiftUI 构建的原生 macOS 应用
-- ⚡ **高性能计算**：异步处理，支持大文件计算
+## Features
 
-## 应用截图
+- 🔐 **Multiple Hash Algorithm Support**: MD5, SHA-1, CRC32
+- 📁 **Batch File Processing**: Calculate hash values for multiple files simultaneously
+- 🎯 **Drag & Drop Operation**: Simply drag files to the application window to start calculation
+- 📋 **One-Click Copy**: Click to copy hash values to clipboard
+- 📊 **File Information Display**: Shows file size, version info, modification date, etc.
+- 🌍 **Multilingual Support**: Supports 22 languages including Chinese, English, Japanese, Korean, German, French, Spanish, Russian, Arabic, etc.
+- 🎨 **Modern Interface**: Native macOS app built with SwiftUI
+- ⚡ **High Performance Computing**: Asynchronous processing with support for large files
 
-![Hash 应用程序界面](Screenshots/hash.png)
+## Screenshots
 
-*Hash 应用程序的主界面，展示了文件选择、哈希计算和结果显示功能*
+![Hash Application Interface](Screenshots/hash.png)
 
-## 系统要求
+*Main interface of the Hash application, showcasing file selection, hash calculation, and result display features*
 
-- macOS 11.0 或更高版本
-- Xcode 13.0 或更高版本（开发环境）
+## System Requirements
 
-## 安装
+- macOS 11.0 or later
+- Xcode 13.0 or later (for development)
 
-### 从源码构建
+## Installation
 
-1. 克隆仓库：
+### Build from Source
+
+1. Clone the repository:
 ```bash
-git clone git@github.com:iOSDevLog/Hash.git
+git clone https://github.com/iOSDevLog/Hash
 cd Hash
 ```
 
-2. 使用 Xcode 打开项目：
+2. Open the project with Xcode:
 ```bash
 open Hash.xcodeproj
 ```
 
-3. 在 Xcode 中构建并运行项目（⌘+R）
+3. Build and run the project in Xcode (⌘+R)
 
-## 使用方法
+## Usage
 
-### 基本操作
+### Basic Operations
 
-1. **启动应用程序**：双击应用图标或从 Launchpad 启动
+1. **Launch the Application**: Double-click the app icon or launch from Launchpad
 
-2. **添加文件**：
-   - 点击"选择文件"按钮选择文件
-   - 或直接将文件拖拽到应用程序窗口
+2. **Add Files**:
+   - Click the "Select Files" button to choose files
+   - Or drag files directly to the application window
 
-3. **选择哈希算法**：
-   - 在右侧面板中勾选需要计算的哈希算法
-   - 支持 MD5、SHA-1、CRC32
+3. **Select Hash Algorithm**:
+   - Check the desired hash algorithms in the right panel
+   - Supports MD5, SHA-1, CRC32
 
-4. **开始计算**：
-   - 点击"开始计算"按钮
-   - 或添加文件后自动开始计算
+4. **Start Calculation**:
+   - Click the "Start Calculation" button
+   - Or calculation starts automatically after adding files
 
-5. **复制结果**：
-   - 点击任意哈希值即可复制到剪贴板
-   - 支持复制单个哈希值或所有结果
+5. **Copy Results**:
+   - Click any hash value to copy to clipboard
+   - Supports copying individual hash values or all results
 
-### 高级功能
+### Advanced Features
 
-- **批量处理**：可同时添加多个文件进行批量计算
-- **进度显示**：实时显示计算进度
-- **文件管理**：支持清除单个文件或清空所有文件
-- **结果导出**：可复制所有计算结果
+- **Batch Processing**: Add multiple files for simultaneous batch calculation
+- **Progress Display**: Real-time calculation progress display
+- **File Management**: Support for clearing individual files or all files
+- **Result Export**: Copy all calculation results
 
-## 技术架构
+## Technical Architecture
 
-### 核心技术
+### Core Technologies
 
-- **SwiftUI**：现代化的用户界面框架
-- **CryptoKit**：Apple 官方加密框架，用于 SHA-1 计算
-- **Foundation**：用于 MD5 和文件操作
-- **UniformTypeIdentifiers**：文件类型识别
+- **SwiftUI**: Modern user interface framework
+- **CryptoKit**: Apple's official cryptographic framework for SHA-1 calculation
+- **Foundation**: For MD5 and file operations
+- **UniformTypeIdentifiers**: File type identification
 
-### 项目结构
+### Project Structure
 
 ```
 Hash/
 ├── Hash/
-│   ├── ContentView.swift          # 主界面视图
-│   ├── HashApp.swift              # 应用程序入口
-│   ├── Assets.xcassets/           # 应用资源
-│   │   └── AppIcon.appiconset/    # 应用图标
-│   ├── Hash.entitlements          # 应用权限配置
-│   └── *.lproj/                   # 多语言本地化文件
-├── HashTests/                     # 单元测试
-└── HashUITests/                   # UI 测试
+│   ├── ContentView.swift          # Main interface view
+│   ├── HashApp.swift              # Application entry point
+│   ├── Assets.xcassets/           # Application resources
+│   │   └── AppIcon.appiconset/    # Application icon
+│   ├── Hash.entitlements          # Application permissions
+│   └── *.lproj/                   # Multilingual localization files
+├── HashTests/                     # Unit tests
+└── HashUITests/                   # UI tests
 ```
 
-### 哈希算法实现
+### Hash Algorithm Implementation
 
-- **MD5**：使用 CommonCrypto 框架实现
-- **SHA-1**：使用 CryptoKit 框架实现
-- **CRC32**：自定义实现，使用标准 CRC32 多项式
+- **MD5**: Implemented using CommonCrypto framework
+- **SHA-1**: Implemented using CryptoKit framework
+- **CRC32**: Custom implementation using standard CRC32 polynomial
 
-## 开发
+## Development
 
-### 环境配置
+### Environment Setup
 
-1. 安装 Xcode 13.0 或更高版本
-2. 确保 macOS 版本为 11.0 或更高
-3. 克隆项目并在 Xcode 中打开
+1. Install Xcode 13.0 or later
+2. Ensure macOS version is 11.0 or later
+3. Clone the project and open in Xcode
 
-### 构建项目
+### Build Project
 
 ```bash
-# 使用 Xcode 命令行工具构建
+# Build using Xcode command line tools
 xcodebuild -project Hash.xcodeproj -scheme Hash -configuration Debug build
 
-# 或在 Xcode 中使用快捷键 ⌘+B
+# Or use shortcut ⌘+B in Xcode
 ```
 
-### 运行测试
+### Run Tests
 
 ```bash
-# 运行单元测试
+# Run unit tests
 xcodebuild test -project Hash.xcodeproj -scheme Hash -destination 'platform=macOS'
 
-# 或在 Xcode 中使用快捷键 ⌘+U
+# Or use shortcut ⌘+U in Xcode
 ```
 
-## 本地化
+## Localization
 
-应用程序支持以下 22 种语言：
+The application supports the following 22 languages:
 
-### 亚洲语言
-- 🇨🇳 中文（简体）
-- 🇹🇼 中文（繁体）
-- 🇯🇵 日本語
-- 🇰🇷 한국어
+### Asian Languages
+- 🇨🇳 中文（简体）(Chinese Simplified)
+- 🇹🇼 中文（繁体）(Chinese Traditional)
+- 🇯🇵 日本語 (Japanese)
+- 🇰🇷 한국어 (Korean)
 - 🇹🇭 ไทย (Thai)
 - 🇻🇳 Tiếng Việt (Vietnamese)
 - 🇮🇳 हिन्दी (Hindi)
 - 🇮🇩 Bahasa Indonesia (Indonesian)
 - 🇲🇾 Bahasa Melayu (Malay)
 
-### 欧洲语言
+### European Languages
 - 🇺🇸 English
 - 🇩🇪 Deutsch (German)
 - 🇫🇷 Français (French)
@@ -167,49 +170,49 @@ xcodebuild test -project Hash.xcodeproj -scheme Hash -destination 'platform=macO
 - 🇷🇸 Српски (Serbian)
 - 🇷🇺 Русский (Russian)
 
-### 中东语言
+### Middle Eastern Languages
 - 🇸🇦 العربية (Arabic)
 - 🇮🇱 עברית (Hebrew)
 
-### 添加新语言
+### Adding New Languages
 
-1. 在 Xcode 中选择项目
-2. 在 "Localizations" 部分添加新语言
-3. 翻译 `Localizable.strings` 文件中的字符串
+1. Select the project in Xcode
+2. Add a new language in the "Localizations" section
+3. Translate the strings in the `Localizable.strings` file
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
 
-### 贡献指南
+### Contribution Guidelines
 
-1. Fork 项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Create a Pull Request
 
-## 许可证
+## License
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 更新日志
+## Changelog
 
 ### v1.0.0
-- ✨ 初始版本发布
-- 🔐 支持 MD5、SHA-1、CRC32 哈希算法
-- 📁 支持批量文件处理
-- 🎯 支持拖拽操作
-- 🌍 支持多语言界面
-- 🎨 现代化 SwiftUI 界面
+- ✨ Initial release
+- 🔐 Support for MD5, SHA-1, CRC32 hash algorithms
+- 📁 Support for batch file processing
+- 🎯 Support for drag & drop operations
+- 🌍 Support for multilingual interface
+- 🎨 Modern SwiftUI interface
 
-## 联系方式
+## Contact
 
-如有问题或建议，请通过以下方式联系：
+For questions or suggestions, please contact us through:
 
-- 提交 Issue：[GitHub Issues](https://github.com/iOSDevLog/Hash/issues)
-- 项目主页：[GitHub Repository](https://github.com/iOSDevLog/Hash)
+- Submit Issues: [GitHub Issues](https://github.com/iOSDevLog/Hash/issues)
+- Project Homepage: [GitHub Repository](https://github.com/iOSDevLog/Hash)
 
 ---
 
-**Hash** - 让文件哈希计算变得简单高效 🚀
+**Hash** - Making file hash calculation simple and efficient 🚀
