@@ -34,7 +34,7 @@ struct HashApp: App {
     
     private func showAboutWindow() {
         let aboutWindow = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 400, height: 300),
+            contentRect: NSRect(x: 0, y: 0, width: 400, height: 400),
             styleMask: [.titled, .closable],
             backing: .buffered,
             defer: false
@@ -51,6 +51,7 @@ struct HashApp: App {
 
 struct AboutView: View {
     var body: some View {
+        Spacer(minLength: 20)
         VStack(spacing: 20) {
             // App Icon
             Image(systemName: "number.square")
@@ -104,5 +105,6 @@ struct AboutView: View {
         }
         .padding()
         .frame(width: 400, height: 300)
+        Spacer()
     }
 }
