@@ -30,7 +30,7 @@
 
 1. 克隆仓库：
 ```bash
-git clone <repository-url>
+git clone git@github.com:iOSDevLog/Hash.git
 cd Hash
 ```
 
@@ -207,8 +207,8 @@ xcodebuild test -project Hash.xcodeproj -scheme Hash -destination 'platform=macO
 
 如有问题或建议，请通过以下方式联系：
 
-- 提交 Issue：[GitHub Issues](https://github.com/your-username/Hash/issues)
-- 邮箱：your-email@example.com
+- 提交 Issue：[GitHub Issues](https://github.com/iOSDevLog/Hash/issues)
+- 项目主页：[GitHub Repository](https://github.com/iOSDevLog/Hash)
 
 ---
 
